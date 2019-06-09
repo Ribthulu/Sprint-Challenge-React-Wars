@@ -1,0 +1,21 @@
+.characterCard{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+.characterList {
+    display: inline-block;
+    width: 15%;
+    min-width: 200px;
+    border-radius: 50px;
+    margin: 5px;
+    padding: 5px;
+    border: 5px solid #443e3e;
+  }
+
+.characterList h3 {
+  text-shadow: 1px 1px 5px #fff;
+  color: #443e3e;
+  }
