@@ -15,7 +15,6 @@ const NewCharacter = (props) =>{
           <p>Eye Color: {props.NewCharacter.eye_color}</p>
           <p>Birth Year: {props.NewCharacter.birth_year}</p>
           <p>Gender: {props.NewCharacter.gender}</p>
-
         </div>
     )
 
