@@ -1,5 +1,7 @@
+/*jshint esversion: 6 */
 import React, { Component } from 'react';
 import './App.css';
+import CharacterList from "./components/CharacterList";
 
 class App extends Component {
   constructor() {
@@ -22,6 +24,7 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
+        // console.log(data);
         this.setState({ starwarsChars: data.results });
       })
       .catch(err => {
@@ -33,6 +36,9 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <div>
+          <CharacterList Characterlist={this.state.starwarsChars}/>
+        </div>
       </div>
     );
   }
